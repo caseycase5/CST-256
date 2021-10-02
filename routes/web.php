@@ -39,6 +39,8 @@ Route::get('/login', function() {
 
 Route::post('/dologin', 'LoginController@index');
 
+Route::post('/dologin3', 'Login3Controller@index');
+
 Route::get('/loginfailed', function() {
 	return view('loginFailed');
 });
@@ -49,6 +51,9 @@ Route::get('/loginpassed', function() {
 
 Route::get('/login2', function() {
 	return view('login2');
+});
+Route::get('/login3', function() {
+	return view('login3');
 });
 
 
